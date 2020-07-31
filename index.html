@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>M-WeatheR</title>
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Fonts -->
+	<!-- Opens Sans Font -->
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+	<!-- Prata Font -->
+	<link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+</head>
+<body id="bg_color">
+	<section id="trees_bg">
+		<section>
+			<h1 id="title_site">M-WeatheR</h1>
+			<h2>find weather forecast in your city</h2>
+		</section>
+		<section id="trees">
+			<form>
+				<input type="text" id="city_name" class="input_value" placeholder="Provide a name of a city">
+				<input type="submit" id="sub_btn" class="sub_button" name="search_weather" value="Find!">
+			</form>
+			<br>
+			<div class="info-panel">
+				<h1 class="city-name">
+	
+				</h1>
+				<p class="info">
+	
+				</p>
+				<p class="temperature">
+					
+				</p>
+			</div>
+			<br>
+			<a href="#" onclick="change_bg_color('bg_color','#FFFFA0', '#000000')">
+				<img src="day_mode.png" alt="" width="105" height="100" id="day" onclick="sw_day_night_buttons()">
+			</a>
+			<a href="#" onclick="change_bg_color('bg_color', '#14295A', '#FFFFFF')">
+				<img src="night_mode_on.png" alt="" width="105" height="100" id="night" onclick="sw_day_night_buttons()">
+			</a>
+		</section>		
+	</section>
+	<!-- footer -->	
+	<footer>
+		<h3>Created by Vladyslav Filenko(c)</h3>
+	</footer>
+	<script type='text/javascript' src='config.js'></script>
+	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="script_buttons.js"></script>
+	<script type="text/javascript" src="m_weatherapp.js"></script>
+</body>
+</html>
