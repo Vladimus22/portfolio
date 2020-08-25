@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            
+        </title>
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+        <style type="text/css">
+            * {
+                font-family: 'Amatic SC', cursive;
+            }
+            header {
+                background-color: #fbfbfb;
+            }
+            .fixed-container {
+                width: 1000px;
+                margin: 0 auto;
+                background-image: url("img/bg_1.png");
+                background-repeat: no-repeat;
+                background-position: right;
+            }
+            .first-section {
+                display: flex;
+                flex-direction: column;
+                padding: 0 100px;
+            }
+            .menu-container {
+                height: 60px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            nav {
+                display: flex;
+            }
+            nav a {
+                color: black;
+                text-decoration: none;
+                margin-right: 40px;
+                font-size: 30px;
+            }
+            nav a:hover {
+                color: grey;
+                text-decoration: underline;
+            }
+            .phone-container{
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+            .phone {
+                font-size: 30px;
+                font-weight: bold;
+                margin-right: 30px;
+            }
+            .order-call {
+                box-shadow: 0px 1px 0px 0px #1c1b18;
+                background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+                background-color:#eae0c2;
+                border-radius:15px;
+                border:2px solid #333029;
+                display:inline-block;
+                cursor:pointer;
+                font-family: 'Neucha', cursive;
+                color:#505739;
+                font-size:25px;
+                font-weight:bold;
+                padding:12px 16px;
+                text-decoration:none;
+                text-shadow:0px 1px 0px #ffffff;
+            }
+            .order-call:hover {
+                background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+                background-color:#ccc2a6;
+            }
+            .order-call:active {
+                position:relative;
+                top:1px;
+            }
+            .title-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                height: 650px;
+            }
+            h1 {
+                font-size: 80px;
+                margin: 0 0 15px;
+            }
+            h3 {
+                color: grey;
+                font-size: 24px;
+            }
+            .more{
+                box-shadow: 0px 1px 0px 0px #1c1b18;
+                background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+                background-color:#eae0c2;
+                border-radius:15px;
+                border:2px solid #333029;
+                display:inline-block;
+                cursor:pointer;
+                color: black;
+                font-family: 'Neucha', cursive;
+                font-size:25px;
+                font-weight:bold;
+                padding:12px 16px;
+                text-decoration:none;
+                text-shadow:0px 1px 0px #ffffff;
+            }
+            .more:hover {
+                background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+                background-color:#ccc2a6;
+            }
+            .more:active {
+                position:relative;
+                top:1px;
+            }
+            .fixed-container.second-section {
+                background-image: none;
+                width: 1000px;
+                margin: 0 auto;
+                padding: 0 100px;
+            }
+            .title-second-container {
+                margin-top: 25px;
+                text-align: center;
+            }
+            .items {
+                margin-top: 50px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-content: flex-start;
+            }
+            .item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+                font-size: 30px;
+            }
+            p {
+                font-family: 'Bad Script', cursive;
+            }
+            .btn {
+                margin-top: 50px;
+                display: flex;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="fixed-container first-section">
+               <div class="menu-container">
+                   <nav>
+                        <a href="#">Услуги</a>
+                        <a href="#">Портфолио</a>
+                        <a href="#">Стоимость</a>
+                   </nav>
+                   <div class="phone-container">
+                       <span class="phone">+7 222 02 02 02</span>
+                       <button class="order-call">Заказать повесть</button>
+                   </div>
+               </div>
+               <div class="title-container">
+                   <h1>Николай Васильевич</h1>
+                   <h3>Прозаик, драматург, поэт, критик, публицист</h3>
+                   <button class="more">Узнать больше</button>
+               </div>
+            </div>
+        </header>
+        <section>
+            <div class="fixed-container second-section">
+                <div class="title-second-container">
+                    <h1>
+                        Что Николай Васильевич делает
+                    </h1>
+                </div>
+                <div class="items">
+                    <div class="item">
+                    <a href="#"><img src="img/icon_1.png" alt="" width="100" height="100"></a>
+                    <p>Пишет повести и поэмы</p>
+                    </div>
+                    <div class="item">
+                    <a href="#"><img src="img/icon_2.png" alt="" width="100" height="100"></a>
+                    <p>Критика ваших трудов</p>
+                    </div>
+                    <div class="item">
+                    <a href="#"><img src="img/icon_3.png" alt="" width="100" height="100"></a>
+                    <p>Постановка пьесы в театре</p>
+                    </div>
+                </div>
+                <div class="btn">
+                    <button class="more">Узнать стоимость</button>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
