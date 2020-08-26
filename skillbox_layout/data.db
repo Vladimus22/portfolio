@@ -1,0 +1,8 @@
+CREATE TABLE orders (
+    ID int;
+    time datetime;
+    name tinytext;
+    phone tinytext;
+    email tinytext;
+)
+
