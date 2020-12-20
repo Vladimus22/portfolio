@@ -3,7 +3,84 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: #94849B;
+}
 
+#japanese_radio_bg{
+    background-image: url(./images/bg_1.png), url(./images/bg_2.png), url(./images/bg_3.png);
+	background-size: cover;
+	animation: particles 20s linear infinite;
+}
+
+@keyframes particles {
+	0% {background-position: 500px 1000px, 0px 0px, 500px 500px;}
+	50% {background-position: 250px 500px, 500px 500px, 250px 250px;;}
+	100%{background-position: 500px 1000px, 1000px 1000px 0px 0px;}
+}
+
+.panel{    
+    width: 360px;
+    height: 640px;
+    position: absolute;
+    top: 1.5%;
+    left: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url("./images/bg1.png");
+    -webkit-box-shadow: -1px 7px 47px 9px, rgb(44, 36, 48); 
+    box-shadow: -1px 7px 47px 9px rgb(44, 36, 48);
+}
+
+.empty{ 
+    width: 100%;
+    height: 50px;
+}
+.text_signature{
+    font-size: 20px;
+    font-family: 'Architects Daughter', cursive;
+    color: #DA4167;
+}
+
+.image_panel{
+    width: 360px;
+    height: 300px;
+    background-image: url("./images/japan_2.svg");
+}
+
+
+.start_button{
+    width: 250px;
+    height: 60px;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+
+    background-color: #568EA3;
+    color: #FFFFF0;
+    font-size: 25px;
+    letter-spacing: 12px;
+}
+
+.timer{
+    margin-top: 300px;
+    font-size: 40px;
+    font-family: 'Architects Daughter', cursive;
+    color: rgb(49, 6, 42);
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 360px){
+.panel{
+    top: 0;
+    left: 0;
+}
+
+}
+/*
 .app {
     height: 100vh;
     display: flex;
@@ -71,4 +148,4 @@ video {
 .sound-picker button{
     border: none;
     
-}
+}*/
