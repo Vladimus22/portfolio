@@ -34,6 +34,21 @@ body{
     box-shadow: -1px 7px 47px 9px rgb(44, 36, 48);
 }
 
+.panel_2{    
+    width: 360px;
+    height: 640px;
+    position: absolute;
+    top: 1.5%;
+    left: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url("./images/japan_theme.svg");
+    -webkit-box-shadow: -1px 7px 47px 9px, rgb(44, 36, 48); 
+    box-shadow: -1px 7px 47px 9px rgb(44, 36, 48);
+}
+
 .empty{ 
     width: 100%;
     height: 50px;
@@ -43,6 +58,13 @@ body{
     font-family: 'Architects Daughter', cursive;
     color: #DA4167;
 }
+
+.text_signature_2{
+    font-size: 35px;
+    font-family: 'Architects Daughter', cursive;
+    color: #DA4167;
+}
+
 
 .image_panel{
     width: 360px;
@@ -72,26 +94,184 @@ body{
     display: flex;
     flex-direction: row;
 }
+.timer2{
+   
+    font-size: 40px;
+    font-family: 'Architects Daughter', cursive;
+    color: rgb(49, 6, 42);
+    display: flex;
+    flex-direction: row;
+}
 
+.panel_timer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.image_bottom {
+    width: 202px;
+    height: 167px;
+    background-image: url("./images/japan_3.svg");
+}
+
+.japanese_button {
+    width: 300px;
+    height: 60px;
+    background-image: url("./images/jp_button.svg");
+    border: none;
+}
+.japanese_button_2 {
+    width: 300px;
+    height: 60px;
+    background-image: url("./images/jp_button5.svg");
+    border: none;
+}
+
+.japanese_button_3 {
+    width: 300px;
+    height: 60px;
+    background-image: url("./images/jp_button6.svg");
+    border: none;
+}
+.buttons {
+    margin-bottom: 150px;
+}
+
+.panel3{    
+    width: 360px;
+    height: 640px;
+    position: absolute;
+    top: 1.5%;
+    left: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: left;
+    background-image:  url("./images/sakura_list.png"), url("./images/bg1.png");
+    background-size: cover;
+    -webkit-box-shadow: -1px 7px 47px 9px, rgb(44, 36, 48); 
+    box-shadow: -1px 7px 47px 9px rgb(44, 36, 48);   
+	animation: particles_sakura 20s linear infinite;
+}
+@keyframes particles_sakura {
+	0% {background-position: 0px 0px, 0px 0px;}
+	50% {background-position: 500px 500px, 0px 0px;}
+	100%{background-position: 1000px 1000px, 0px 0px;}
+}
+
+.bg_sakura {
+    width: 360px;
+    height: 640px;
+    position: absolute;
+    background-image: url("./images/sakura_list2.png");
+    background-size: cover;
+    top: 1.5%;
+    left: 35%;
+    animation: particles_sakura2 15s linear infinite;
+    z-index: 1;
+    pointer-events: none;
+}
+@keyframes particles_sakura2 {
+	0% {background-position: 0px 0px;}
+	50% {background-position: 500px 500px;}
+	100%{background-position: 1000px 1000px;}
+}
+.sakura_img {
+    left: 0;
+    width: 262px;
+    height: 301px;
+    background-image: url("./images/Sakura.svg");
+}
+
+.timers_buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tm_btn {
+    width: 100px;
+    height: 70px;
+    background-image: url("./images/btn.png");
+    border: none;
+    color: white;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 25px;
+}
 @media only screen and (max-width: 360px){
 .panel{
     top: 0;
     left: 0;
 }
-@media (min-aspect-ratio: 9.5/9){
+
+.panel_2{
+    top: 0;
+    left: 0;
+}
+.panel3{
+    top: 0;
+    left: 0;
+}
+.bg_sakura{
+    top: 0;
+    left: 0;
+}
+
+}
+
+@media (max-aspect-ratio: 9.5/9){
     .panel{
         top: 0;
         left: 0;
     }
+    .panel_2{
+        top: 0;
+        left: 0;
+        background-image: url("./images/japan_theme_16_9.svg");
+        background-size: cover;
+    }
+    .panel3{
+        top: 0;
+        left: 0;
+    }
+
+    .bg_sakura{
+        top: 0;
+        left: 0;
+    }
+    
 }
-@media (min-aspect-ratio: 16/9){
+@media (max-aspect-ratio: 16/9){
     .panel{
         top: 0;
         left: 0;
     }
+    .panel_2{
+        top: 0;
+        left: 0;
+    }
+    .panel3{
+        top: 0;
+        left: 0;
+        height: 780px;
+    }
+    
+    .sakura_img {
+        left: 0;
+        width: 258px;
+        height: 301px;
+        
+        background-image: url("./images/Sakura.svg");
+    }
+    .bg_sakura{
+        top: 0;
+        left: 0;
+        height: 780px;
+    }
+    
 }
-}
-@media only screen and (max-width: 1080px)
+
+/* @media only screen and (max-width: 1080px)
 {
 .panel{
     top:0;
@@ -99,8 +279,15 @@ body{
     width: 100%;
     height: 100%;
 }
-
+.panel_2{
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/japan_theme_16_9.svg");
 }
+
+}*/
 /*
 .app {
     height: 100vh;

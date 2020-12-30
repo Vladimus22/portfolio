@@ -1,13 +1,16 @@
-
+ms = 0;
+s = 0;
+m = 0;
+h = 0;
 
 function timer_start() {
-    ms = 0;
-    s = 0;
-    m = 0;
-    h = 0;
     
-    setInterval(milliseconds, 100);
+    
+    var timer_stopped = false;
+    
+    clear = setInterval(milliseconds, 100);
     music();
+    
 }
 function milliseconds(){
    var ms_text = document.querySelector('.milliseconds');
@@ -36,9 +39,17 @@ function minutes() {
 function music(){
     song = document.querySelector(".song");
     sond_start =  song.play();
+    //song_stop = song.pause();
     music_start();   
     
 }
 function music_start(){
     sond_start;
+}
+
+function stop_timer() {
+    clearInterval(clear);
+    song.pause();
+   // song_stop;
+    console.log('stop!');
 }
