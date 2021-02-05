@@ -157,6 +157,7 @@ section {
 
 .book_lists {
     position: fixed;
+    float: left;
     left: 10vw;
     top: 4.5vh;
     width: 450px;
@@ -176,6 +177,7 @@ section {
     background-color: #8d0801;
     box-shadow: 0px 15px 28px 8px rgba(71, 71, 71, 12);
     height: 100vh;
+    bottom: 0;
     z-index: 1;
 }
 .white_panel {
@@ -497,4 +499,28 @@ background: linear-gradient(0deg, rgba(141,8,1,1) 0%, rgba(46,0,0,1) 42%, rgba(7
       grid-template-rows: 1fr;
       color: #F3DFA2;
       font-family: 'Cinzel', serif;
+  }
+
+
+  @media screen and (max-width: 1200px) {
+    .book_lists {
+        left: 5vw;
+        top: 4.5vh;
+        width: 350px;
+        height: 500px;
+        background-color: #001427;
+        background-image: url("img_5.png");
+        z-index: 2;
+    }
+    .img_box {
+        height: 500px;
+        width: 0px;
+    }
+    .transform-active {
+        height: 500px;
+        width: 350px;
+      }
+      .red_panel {
+        
+      }
   }
