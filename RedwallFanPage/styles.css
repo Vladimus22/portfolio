@@ -510,6 +510,7 @@ background: linear-gradient(0deg, rgba(141,8,1,1) 0%, rgba(46,0,0,1) 42%, rgba(7
         height: 500px;
         background-color: #001427;
         background-image: url("img_5.png");
+        background-size: cover;
         z-index: 2;
     }
     .img_box {
@@ -521,6 +522,37 @@ background: linear-gradient(0deg, rgba(141,8,1,1) 0%, rgba(46,0,0,1) 42%, rgba(7
         width: 350px;
       }
       .red_panel {
-        
+        background-color: #f2f4f4;
+        box-shadow: none;
+        min-height: 100vh;
+        min-height: -webkit-fill-available;
       }
+      .swordsman {
+        bottom: -250px;
+        right: 15px;
+        position: fixed;
+        width: 416px;
+        height: 560px;
+        background-image: url("img_4.png");
+        background-size: contain;
+        z-index: 1;
+    }
+    .brushes {
+        position: fixed;
+        bottom: 0;    
+        width: 100%;
+        height: 100px;
+        background-image: url("img_3.png");
+        background-size: contain;  
+    }
+    .serials_page {
+        display: flex;
+        flex-direction: column;
+        background-color: #8d0801;
+        background-image: url("bg_img_1.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        overflow: auto;
+    }
   }
