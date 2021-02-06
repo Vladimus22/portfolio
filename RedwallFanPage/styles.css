@@ -410,7 +410,7 @@ section {
     padding-top: 25px;
     overflow-y: scroll;
     background: rgb(141,8,1);
-background: linear-gradient(0deg, rgba(141,8,1,1) 0%, rgba(46,0,0,1) 42%, rgba(75,0,0,1) 75%, rgba(141,8,1,1) 100%);
+    background: linear-gradient(0deg, rgba(141,8,1,1) 0%, rgba(46,0,0,1) 42%, rgba(75,0,0,1) 75%, rgba(141,8,1,1) 100%);
 }
 .first {
     display: flex;
@@ -493,15 +493,103 @@ background: linear-gradient(0deg, rgba(141,8,1,1) 0%, rgba(46,0,0,1) 42%, rgba(7
     background: #555; 
   }
   .about_serial {
-      padding-left: 33px;
-      display: grid;
-      grid-template-columns: 25% 25% 25% 25%;
-      grid-template-rows: 1fr;
-      color: #F3DFA2;
-      font-family: 'Cinzel', serif;
+    padding-left: 33px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 1fr;
+    color: #F3DFA2;
+    font-family: 'Cinzel', serif;
   }
-
-
+/* Contact */
+.contact_form {
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+.form_1 {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr;
+    width: 750px;
+    height: 450px;
+    background-color: #5B8E7D;/* #5B8E7D; #2274A5 */
+    box-shadow: 0px 0px 28px 8px rgba(71, 71, 71, 12);
+}
+input[type=text], textarea, ::placeholder{
+    background-color: #5B8E7D;
+    outline: inherit;
+    color: #f2f4f4;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #f2f4f4;
+    padding: 8px 0px;
+    width: 100%;
+    font-family: 'Great Vibes', cursive;
+}
+input[type=email], textarea, ::placeholder {
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #f2f4f4;
+    padding: 8px 0px;
+    background-color: #5B8E7D;
+    outline: inherit;
+    color: #f2f4f4;  
+    width: 100%;  
+    font-family: 'Great Vibes', cursive;
+  }
+.data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.title_1 {
+    font-family: 'Cinzel', serif;
+    color: #f2f4f4;
+}
+.labels {
+    padding-right: 200px;
+    font-family: 'Cinzel', serif;
+    color: #f2f4f4;
+}
+.labels_2, .labels_3 {
+    margin-top: 15px;
+    padding-right: 200px;
+    font-family: 'Cinzel', serif;
+    color: #f2f4f4;
+}
+.labels_3 {
+    padding-right: 178px;
+}
+#btn_sub {
+    background-color:#2f4a41;
+	border-radius:28px;
+	border: none;
+	display:inline-block;
+	cursor:pointer;
+	font-family: 'Cinzel', serif;
+    color: #f2f4f4;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #071405;
+    outline: inherit;
+    cursor: pointer;
+    margin-top: 15px;
+}
+#btn_sub:hover {
+	background-color:#4a7768;
+}
+#btn_sub:active {
+	position:relative;
+	top:1px;
+}
+#status {
+    font-family: 'Cinzel', serif;
+    color: #f2f4f4;
+    margin-top: 10px;
+}
   @media screen and (max-width: 1200px) {
     .book_lists {
         left: 5vw;

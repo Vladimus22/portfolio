@@ -22,35 +22,29 @@
             <a>About Me</a>
             <a id="contact_link" href="contact.html">Contact</a>
         </nav>
-    </header>
-    <!-- ♖ -->
-    <div class="redwall_txt">⚔ REDWALL ⚔</div>
-    <section>
-        <div class="panel">
-            A series of children's fantasy novels
-        </div>
-        <div class="farm">
-            <div class="welcome_panel">
-                <div class="sub_wel_panel">
-
+        <div class="contact_form">
+            <div class="form_1">
+                <div class="data">
+                    <h1 class="title_1">Contact Me</h1>
+                    <form action="https://formspree.io/f/xrgodoeo" method="POST" id="my-form">
+                        <div class="labels"><label for="name">Your Name</label></div>                    
+                        <input type="text" name="name" id="name">
+                        <div class="labels_2"><label for="name">Your Email</label></div>  
+                        <input type="email" name="email" id="email">
+                        <div class="labels_3"><label for="name">Your Message</label></div>  
+                        <input type="text" name="message" id="message">
+                        <button type="submit" id="btn_sub">SUBMIT</button>
+                    </form>
+                    <div class="success" id="status">
+                        
+                    </div>
                 </div>
-                <div class="main_welc_panel">
-                    <h3 id="txt1">Welcome</h3>
-                    This is a fan page dedicated by series of books named "Redwall".
-                    Here you can familiarize with some books from serie and watch serial "Redwall".
-                    <br/>
-                    <a href="books.html"><img id="get_more" src="button_layout.png" /></a>
+                <div class="bg_image">
+                    <img src="img_9.png" alt="" width="300px" height="450px">
                 </div>
             </div>
         </div>
-    </section>
-    <footer>
-        <div class="swordsman">
-
-        </div>
-        <div class="brushes">
-         
-        </div>
-    </footer>
+    </header>
+    <script src="form.js"></script>
 </body>
 </html>
