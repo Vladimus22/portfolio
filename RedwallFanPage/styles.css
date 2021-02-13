@@ -67,6 +67,7 @@ section {
     color: #FEA82F;/*#FFECD1; #F4B860;  4DA1A9*/
     text-shadow: 2px 2px 4px #000000;
 }
+
 .farm {
     display: flex;
     justify-content: center;
@@ -77,6 +78,10 @@ section {
     background-image: url('img_1.png');
     background-size: cover;    
 }
+#about {
+    margin-top: 50px;
+}
+
 .welcome_panel {
     display: flex;
     flex-direction: column;
@@ -153,7 +158,7 @@ section {
 .transform-active {
     height: 600px;
     width: 450px;
-  }
+}
 
 .book_lists {
     position: fixed;
@@ -391,8 +396,7 @@ section {
 }
 .white-juice {
     height: 10px;    
-    background-color: #f2f4f4;
-    
+    background-color: #f2f4f4;    
 }
 .playlist_title {
     padding-top: 40px;
@@ -491,7 +495,7 @@ section {
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: #555; 
-  }
+}
   .about_serial {
     padding-left: 33px;
     display: grid;
@@ -499,7 +503,7 @@ section {
     grid-template-rows: 1fr;
     color: #F3DFA2;
     font-family: 'Cinzel', serif;
-  }
+}
 /* Contact */
 .contact_form {
     padding-top: 5%;
@@ -590,7 +594,78 @@ input[type=email], textarea, ::placeholder {
     color: #f2f4f4;
     margin-top: 10px;
 }
-  @media screen and (max-width: 1200px) {
+/* About Me */
+.farm_1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 24px;
+    box-shadow: 0px 15px 28px 8px rgba(71, 71, 71, 12);
+    width: 70%;
+    height: 900px;
+    background-image: url('pic_1.jpg');
+    background-size: cover;   
+    background-repeat: no-repeat;
+ }
+.swordsman_2 {   
+    position: fixed;
+    bottom: 0;
+    right: 100px;
+    width: 416px;
+    height: 400px;
+    background-image: url("img_10.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;    
+    pointer-events: none;
+}
+
+.info_about_me {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgba(242, 244, 244, 83%);
+    padding: 20px;
+    font-family: 'Benne', serif;
+    font-size: 16px;
+}
+.my_photo {
+    box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.25);
+}
+.info_am {
+    margin-left: 15px;
+    width: 450px;
+}
+.info_am1 {
+    
+    width: 500px;
+}
+.links_media {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+    background-color: rgba(242, 244, 244, 83%);
+    padding: 20px;
+    font-family: 'Benne', serif;
+    font-size: 16px;
+}
+.links_icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.links_icons>a {
+    margin-right: 10px;
+    
+}
+.signature {
+    margin-top: 25px;
+    display: flex;
+    
+    justify-content: center;
+}
+@media screen and (max-width: 1200px) {
     .book_lists {
         left: 5vw;
         top: 4.5vh;
@@ -608,14 +683,14 @@ input[type=email], textarea, ::placeholder {
     .transform-active {
         height: 500px;
         width: 350px;
-      }
-      .red_panel {
+    }
+    .red_panel {
         background-color: #f2f4f4;
         box-shadow: none;
         min-height: 100vh;
         min-height: -webkit-fill-available;
       }
-      .swordsman {
+    .swordsman {
         bottom: -250px;
         right: 15px;
         position: fixed;
@@ -643,4 +718,25 @@ input[type=email], textarea, ::placeholder {
         background-attachment: fixed;
         overflow: auto;
     }
-  }
+    .series {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 350px;
+        padding-left: 25px;
+        overflow-x: auto;
+        overflow-y: none;
+        background: rgb(141,8,1);
+        background: linear-gradient(0deg, rgba(141,8,1,1) 0%, rgba(46,0,0,1) 42%, rgba(75,0,0,1) 75%, rgba(141,8,1,1) 100%);
+    }
+    .icon_video_1, .icon_video_2, .icon_video_3, .icon_video_4 {
+        width: 250px; 
+        height: 155px;
+        background-color: #f2f4f4;
+        background-image: url("img_8.png");
+        background-size: contain;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+}
