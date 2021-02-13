@@ -628,7 +628,7 @@ input[type=email], textarea, ::placeholder {
     font-family: 'Benne', serif;
     font-size: 16px;
 }
-.my_photo {
+.my_photo>img {
     box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.25);
 }
 .info_am {
@@ -664,6 +664,9 @@ input[type=email], textarea, ::placeholder {
     display: flex;
     
     justify-content: center;
+}
+#fr1 {
+    width: 95%;
 }
 @media screen and (max-width: 1200px) {
     .book_lists {
@@ -738,5 +741,8 @@ input[type=email], textarea, ::placeholder {
         background-size: contain;
         cursor: pointer;
         margin-right: 10px;
+    }
+    .farm_1 {
+        height: 100%;
     }
 }
