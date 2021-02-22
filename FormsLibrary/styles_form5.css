@@ -1,0 +1,102 @@
+body {
+    padding: 0;
+    margin: 0;    
+    background: #2c3e50;
+    background: linear-gradient(to right, #2C3E50, #FD746C); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form-panel {
+    margin-top: 2%;
+    width: 25%;    
+    background: #ffffff;
+    border-radius: 8px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: 'Varela', sans-serif;    
+}
+h1 {
+    text-align: center;
+}
+.inputs_text {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+input[type=text] {
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 100%;
+    border: none;
+    padding: 20px 1px;
+    border-bottom: 2px solid rgb(156, 156, 156);
+    font-family: 'Krub', sans-serif;
+    font-size: 18px;
+    outline: none;
+}
+input[type=text]::placeholder {
+    font-family: 'Krub', sans-serif;
+    font-size: 18px;
+}
+label {
+    font-size: 14px;
+}
+select {
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 2px solid rgb(156, 156, 156);
+    outline: none;
+    font-family: 'Krub', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+.dis_opt {
+    font-family: 'Krub', sans-serif;
+    font-weight: bold;
+}
+option {
+    font-family: 'Krub', sans-serif;
+    font-weight: bold;
+}
+#txt_area {
+    width: 98%;
+    height: 150px;
+    border: none;
+    resize: none;
+    border-bottom: 2px solid rgb(156, 156, 156);
+    margin-bottom: 25px;
+    padding: 12px 0px;
+    font-family: 'Krub', sans-serif;
+    font-size: 18px;
+}
+#btn {
+    padding: 15px 15px;
+    background: linear-gradient(to right, #FD746C, #2C3E50); 
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #ffffff;
+    outline: none;
+}
+footer {
+    margin-top: 15px;
+    text-align: center;
+}
+footer>a {
+    color: #ffffff;
+}
+@media only screen and (max-width: 800px){
+    .form-panel {
+        margin-top: 5%;
+        width: 70%;
+    }
+}

@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("im_f4.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    margin-top: 35px;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Archivo', sans-serif;
+    font-size: 38px;
+}
+.radio_buttons {    
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 30px;
+}
+.form-panel {
+    margin-top: 5%;
+    width: 25%;    
+    padding: 30px;
+    background: rgb(47,73,29);
+    background: linear-gradient(36deg, rgba(47,73,29,1) 0%, rgba(172,217,112,1) 100%);
+    border-radius: 10px;   
+    font-family: 'PT Sans', sans-serif; 
+}
+input[type=text]{
+    width: 95%;
+    border: none;
+    border-bottom: 1.5px solid white;
+    margin-bottom: 20px;
+    padding: 15px 10px;
+    background: none;
+    color: #ffffff;
+}
+input[type=text]::placeholder {
+    color:#ffffff;
+    font-size: 15px;
+    font-weight: 100;
+    font-family: 'PT Sans', sans-serif; 
+}
+#txt_area{
+    padding-right: 0px;
+    height: 100px;
+    width: 95%;
+    resize: none;
+    border: none;
+    border-bottom: 1.5px solid #ffffff;  
+    font-size: 15px;
+    padding: 15px 10px;
+    background: none;
+}
+#txt_area::placeholder {
+    color: #ffffff;
+    font-family: 'PT Sans', sans-serif; 
+}
+input[type=radio]{
+    border-color: #ffffff;
+    background-color: #83b157;
+}
+.other_inputs {
+    display: flex;
+    flex-direction: column;    
+}
+#sbm {
+    margin-top: 20px;
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	background-color:#ffffff;
+	border-radius:0px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:15px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+footer {
+    margin-top: 15px;
+    text-align: center;
+}
+footer>a {
+    color: #000000;
+}
+@media only screen and (max-width: 800px){
+    body {
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .form-panel {
+        margin-top: 5%;
+        width: 70%;
+    }
+}
