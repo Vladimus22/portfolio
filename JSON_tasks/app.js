@@ -114,7 +114,7 @@ function Convert() {
    $.ajax({
       'async': false,
       'global': false,
-      'url': "https://jsonkeeper.com/b/4I2D",
+      'url': "https://vladimus22.github.io/portfolio/JSON_tasks/metric.json",
       'dataType': "json",
       'success': function (data) {
          arr = data;
